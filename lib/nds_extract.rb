@@ -15,7 +15,7 @@ def directors_totals(nds)
 #p "next"/n
 pp nds
 
-p nds[0][:movies][0][:worldwide_gross]
+p nds[2][:movies][0][:worldwide_gross]
 p nds[:name]
 
 
