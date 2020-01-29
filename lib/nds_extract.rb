@@ -1,11 +1,38 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
+require 'pp'
 
 def directors_totals(nds)
+
+#  pp nds
   # Remember, it's always OK to pretty print what you get *in* to make sure
   # that you know what you're starting with!
   #
   #
+
+#p nds[0][:movies]
+
+#p "next"/n
+
+p nds[0][:movies][0][:worldwide_gross]
+p nds[:name]
+
+
+
+
+
+
+  # i = 0
+  # J = 0
+  # while i < nds[j][:movies].length do
+  #   nds[j][:movies][i][:worldwide_gross]
+  #
+  #
+  #
+  # end
+
+
+
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   result = {
   }
