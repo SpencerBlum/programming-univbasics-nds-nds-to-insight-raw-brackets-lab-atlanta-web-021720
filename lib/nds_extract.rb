@@ -21,22 +21,27 @@ p nds[:name]
 
 
 
+result = {
+}
 
-
-  # i = 0
-  # J = 0
-  # while i < nds[j][:movies].length do
-  #   nds[j][:movies][i][:worldwide_gross]
-  #
-  #
-  #
-  # end
-
-
+  director_index = 0
+  totals = {}
+  while director_index < nds.length do
+    director_name = nds[director_index][:name]
+    totals[director_name] = 0
+    movie_index = 0 
+    
+    while i < nds[j][:movies].length do
+      totals[director_name] +=   nds[director_index][:movies][movie_index][:worldwide_gross]
+    
+      movie_index += 1
+    end
+    director_index += 1
+  end 
+totals
 
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
-  result = {
-  }
+
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
@@ -46,5 +51,5 @@ p nds[:name]
   #
   #
   # Be sure to return the result at the end!
-  nil
+  
 end
